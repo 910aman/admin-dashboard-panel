@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,800;1,800&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-inter: 'Inter', sans-serif;
+    --font-alumni-sans: 'Alumni Sans', sans-serif;
+}
+
+body {
+  @apply font-inter bg-gray-50 text-gray-800;
+}
+
+/* Layout */
+.app-shell {
+  @apply min-h-screen w-full;
+}
+
+.app-header {
+  @apply sticky top-0 z-20 flex items-center justify-between px-4 py-2 bg-white border-b border-gray-200 h-[90px];
+}
+
+.main-layout {
+  @apply flex;
+}
+
+.main-content {
+  @apply p-6 w-full ml-80;
+}
+
+/* Logo */
+.app-logo {
+  @apply text-4xl font-bold font-alumni-sans;
+}
+
+/* Search */
+.search-container {
+  @apply hidden sm:block;
+}
+
+.search-box {
+  @apply relative h-10 rounded-md bg-[#EBEBEB66];
+}
+
+.search-input-lg {
+  @apply w-[500px] pl-9 py-2 bg-transparent rounded-md text-lg focus:outline-none;
+}
+
+/* Header actions */
+.header-actions {
+  @apply flex items-center gap-4;
+}
+
+.icon-button-square {
+  @apply flex items-center justify-center w-12 h-12 bg-[#EBEBEB66] rounded-md;
+}
+
+.btn-secondary {
+  @apply flex items-center gap-2 px-3 h-12 bg-[#EBEBEB66] rounded-md text-sm;
+}
+
+/* Section header */
+.section-header {
+  @apply flex items-start justify-between gap-6;
+}
+
+.section-title {
+  @apply text-xl font-semibold;
+}
+
+.section-subtitle {
+  @apply text-base text-gray-400;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply flex gap-3 px-4 py-2 rounded-md text-white bg-linear-to-br from-[#034175] to-[#37B7FE];
+}
+
+/* Cards & sections */
+.card-grid {
+  @apply mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4;
+}
+
+.section-card {
+  @apply bg-white p-4 rounded-md border border-gray-100;
+}
+
+/* Recent societies */
+.section-header-border {
+  @apply flex items-center justify-between mb-3 border-b border-gray-200 pb-3;
+}
+
+.recent-item {
+  @apply flex items-center justify-between gap-5;
+}
+
+.recent-left {
+  @apply flex items-center gap-3;
+}
+
+.recent-thumb {
+  @apply w-20 h-12 bg-linear-to-br from-gray-200 to-gray-300 rounded-md overflow-hidden;
+}
+
+.recent-thumb-img {
+  @apply w-full h-full object-fill rounded-md;
+}
+
+.recent-view-btn {
+  @apply flex gap-2 px-3 py-1 text-sm bg-[#F2F5F7] rounded;
+}
+
+/* Sidebar widgets */
+.sidebar-widgets {
+  @apply flex flex-col items-end gap-6;
+}
+
+.widget-circle {
+  @apply w-40 h-full bg-white rounded-full flex items-center justify-center;
+}
+
+/* Custom Card CSS */
+.card-root {
+  @apply bg-white p-4 rounded-xl border border-gray-100 shadow-sm 
+         flex items-center justify-between gap-4 transition-shadow 
+         hover:shadow-md hover:border-blue-100;
+}
+
+.card-label {
+  @apply text-xs font-medium tracking-wide text-gray-500;
+}
+
+.card-value {
+  @apply text-2xl font-semibold mt-1 text-gray-900;
+}
+
+.card-subtitle {
+  @apply mt-1 text-xs text-gray-400;
+}
+
+.card-icon-wrapper {
+  @apply w-12 h-12 rounded-lg flex items-center justify-center shrink-0;
+}
+
+.card-icon-img {
+  @apply w-6 h-6 object-contain;
+}

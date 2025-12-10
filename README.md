@@ -12,6 +12,6 @@ The Admin Dashboard Panel is a web and Android-based application designed for ad
 - **Real-time Data Sync**: Update data instantly across both platforms.
 
 ## Tech Stack
-- **Web**: React.js, Node.js, Express, MongoDB
-- **Android**: Java/Kotlin, Retrofit for API calls
+- **Web**: React.js 
+- **Android**: React native
 - **Authentication**: JWT for secure login and session management
